@@ -119,13 +119,12 @@ model = dict(
             mask_thr_binary=0.5)))
 dataset_type = 'CocoDataset'
 data_root = './data/coco'
-CLASSES = ('balloon', )
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True, with_mask=True),
-    dict(type='Resize', img_scale=(640, 480), keep_ratio=True),
+    dict(type='Resize', img_scale=(240, 180), keep_ratio=True),
     dict(type='RandomFlip', flip_ratio=0.5),
     dict(
         type='Normalize',
@@ -140,7 +139,7 @@ test_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
         type='MultiScaleFlipAug',
-        img_scale=(640, 480),
+        img_scale=(240, 180),
         flip=False,
         transforms=[
             dict(type='Resize', keep_ratio=True),
@@ -165,7 +164,7 @@ data = dict(
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(type='LoadAnnotations', with_bbox=True, with_mask=True),
-            dict(type='Resize', img_scale=(640, 480), keep_ratio=True),
+            dict(type='Resize', img_scale=(240, 180), keep_ratio=True),
             dict(type='RandomFlip', flip_ratio=0.5),
             dict(
                 type='Normalize',
@@ -186,7 +185,7 @@ data = dict(
             dict(type='LoadImageFromFile'),
             dict(
                 type='MultiScaleFlipAug',
-                img_scale=(640, 480),
+                img_scale=(240, 180),
                 flip=False,
                 transforms=[
                     dict(type='Resize', keep_ratio=True),
@@ -209,7 +208,7 @@ data = dict(
             dict(type='LoadImageFromFile'),
             dict(
                 type='MultiScaleFlipAug',
-                img_scale=(640, 480),
+                img_scale=(240, 180),
                 flip=False,
                 transforms=[
                     dict(type='Resize', keep_ratio=True),
@@ -244,7 +243,8 @@ resume_from = None
 workflow = [('train', 1)]
 opencv_num_threads = 0
 mp_start_method = 'fork'
-auto_scale_lr = dict(enable=True, base_batch_size=16)
-work_dir = 'demo_test'
+auto_scale_lr = dict(enable=False, base_batch_size=1)
+CLASSES = ('balloon', )
+work_dir = 'ballon_test'
 auto_resume = False
-gpu_ids = range(0, 1)
+gpu_ids = [0]
