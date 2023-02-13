@@ -1,15 +1,15 @@
-2023/02/12 23:56:46 - mmengine - INFO - 
+2023/02/13 20:22:28 - mmengine - INFO - 
 ------------------------------------------------------------
 System environment:
     sys.platform: linux
-    Python: 3.8.16 (default, Jan 17 2023, 23:13:24) [GCC 11.2.0]
+    Python: 3.8.15 (default, Nov 24 2022, 15:19:38) [GCC 11.2.0]
     CUDA available: True
     numpy_random_seed: 0
     GPU 0: NVIDIA GeForce RTX 3090
-    CUDA_HOME: /data/apps/cuda/11.6
-    NVCC: Cuda compilation tools, release 11.6, V11.6.112
+    CUDA_HOME: /data/apps/cuda/11.7
+    NVCC: Cuda compilation tools, release 11.7, V11.7.64
     GCC: gcc (GCC) 9.3.0
-    PyTorch: 1.13.1
+    PyTorch: 1.12.1+cu116
     PyTorch compiling details: PyTorch built with:
   - GCC 9.3
   - C++ Version: 201402
@@ -20,13 +20,13 @@ System environment:
   - NNPACK is enabled
   - CPU capability usage: AVX2
   - CUDA Runtime 11.6
-  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_61,code=sm_61;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_37,code=compute_37
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
   - CuDNN 8.3.2  (built against CUDA 11.5)
   - Magma 2.6.1
-  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.6, CUDNN_VERSION=8.3.2, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -fabi-version=11 -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wunused-local-typedefs -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Werror=cast-function-type -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.13.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, 
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.6, CUDNN_VERSION=8.3.2, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -fabi-version=11 -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Werror=cast-function-type -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.12.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=OFF, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, 
 
-    TorchVision: 0.14.1
-    OpenCV: 4.7.0
+    TorchVision: 0.13.1+cu116
+    OpenCV: 4.6.0
     MMEngine: 0.5.0
 
 Runtime environment:
@@ -39,7 +39,7 @@ Runtime environment:
     GPU number: 1
 ------------------------------------------------------------
 
-2023/02/12 23:56:47 - mmengine - INFO - Config:
+2023/02/13 20:22:29 - mmengine - INFO - Config:
 norm_cfg = dict(type='BN', requires_grad=True)
 data_preprocessor = dict(
     type='SegDataPreProcessor',
@@ -248,10 +248,10 @@ visualizer = dict(
     name='visualizer')
 log_processor = dict(by_epoch=False)
 log_level = 'INFO'
-load_from = '/HOME/scz5202/run/mmsegmentation/checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth'
+load_from = '/HOME/scz5202/run/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth'
 resume = False
 tta_model = dict(type='SegTTAModel')
-optimizer = dict(type='SGD', lr=0.001, momentum=0.9, weight_decay=0.0005)
+optimizer = dict(type='SGD', lr=0.0015, momentum=0.9, weight_decay=0.0005)
 optim_wrapper = dict(
     type='OptimWrapper',
     optimizer=dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0005),
@@ -265,28 +265,28 @@ param_scheduler = [
         end=40000,
         by_epoch=False)
 ]
-train_cfg = dict(type='IterBasedTrainLoop', max_iters=1600, val_interval=400)
+train_cfg = dict(type='IterBasedTrainLoop', max_iters=2400, val_interval=400)
 val_cfg = dict(type='ValLoop')
 test_cfg = dict(type='TestLoop')
 default_hooks = dict(
     timer=dict(type='IterTimerHook'),
     logger=dict(type='LoggerHook', interval=100, log_metric_by_epoch=False),
     param_scheduler=dict(type='ParamSchedulerHook'),
-    checkpoint=dict(type='CheckpointHook', by_epoch=False, interval=400),
+    checkpoint=dict(type='CheckpointHook', by_epoch=False, interval=800),
     sampler_seed=dict(type='DistSamplerSeedHook'),
     visualization=dict(type='SegVisualizationHook'))
 img_dir = '/HOME/scz5202/run/mmsegmentation/data/Glomeruli-dataset/images'
 ann_dir = '/HOME/scz5202/run/mmsegmentation/data/Glomeruli-dataset/masks'
 randomness = dict(seed=0)
 launcher = 'none'
-work_dir = 'work/test'
+work_dir = 'mmsegmentation/work/Glomeruli'
 
-2023/02/12 23:56:47 - mmengine - WARNING - The "visualizer" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:47 - mmengine - WARNING - The "vis_backend" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:48 - mmengine - WARNING - The "model" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:50 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
-2023/02/12 23:56:50 - mmengine - WARNING - The "hook" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:50 - mmengine - INFO - Hooks will be executed in the following order:
+2023/02/13 20:22:29 - mmengine - WARNING - The "visualizer" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:29 - mmengine - WARNING - The "vis_backend" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:34 - mmengine - WARNING - The "model" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:36 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
+2023/02/13 20:22:36 - mmengine - WARNING - The "hook" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:36 - mmengine - INFO - Hooks will be executed in the following order:
 before_run:
 (VERY_HIGH   ) RuntimeInfoHook                    
 (BELOW_NORMAL) LoggerHook                         
@@ -355,19 +355,19 @@ after_test_epoch:
 after_run:
 (BELOW_NORMAL) LoggerHook                         
  -------------------- 
-2023/02/12 23:56:51 - mmengine - WARNING - The "loop" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:51 - mmengine - WARNING - The "dataset" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:51 - mmengine - WARNING - The "transform" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:51 - mmengine - WARNING - The "data sampler" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:51 - mmengine - WARNING - The "optimizer wrapper constructor" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:51 - mmengine - WARNING - The "optimizer" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:51 - mmengine - WARNING - The "optim_wrapper" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:51 - mmengine - WARNING - The "parameter scheduler" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:52 - mmengine - WARNING - The "metric" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:53 - mmengine - WARNING - The "weight initializer" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
-2023/02/12 23:56:53 - mmengine - INFO - load model from: open-mmlab://resnet50_v1c
-2023/02/12 23:56:53 - mmengine - INFO - Loads checkpoint by openmmlab backend from path: open-mmlab://resnet50_v1c
-2023/02/12 23:56:53 - mmengine - WARNING - The model and loaded state dict do not match exactly
+2023/02/13 20:22:37 - mmengine - WARNING - The "loop" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:37 - mmengine - WARNING - The "dataset" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:37 - mmengine - WARNING - The "transform" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:37 - mmengine - WARNING - The "data sampler" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:37 - mmengine - WARNING - The "optimizer wrapper constructor" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:37 - mmengine - WARNING - The "optimizer" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:37 - mmengine - WARNING - The "optim_wrapper" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:37 - mmengine - WARNING - The "parameter scheduler" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:37 - mmengine - WARNING - The "metric" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:38 - mmengine - WARNING - The "weight initializer" registry in mmseg did not set import location. Fallback to call `mmseg.utils.register_all_modules` instead.
+2023/02/13 20:22:38 - mmengine - INFO - load model from: open-mmlab://resnet50_v1c
+2023/02/13 20:22:38 - mmengine - INFO - Loads checkpoint by openmmlab backend from path: open-mmlab://resnet50_v1c
+2023/02/13 20:22:39 - mmengine - WARNING - The model and loaded state dict do not match exactly
 
 unexpected key in source state_dict: fc.weight, fc.bias
 
@@ -933,83 +933,119 @@ The value is the same before and after calling `init_weights` of EncoderDecoder
 
 auxiliary_head.convs.0.bn.bias - torch.Size([256]): 
 The value is the same before and after calling `init_weights` of EncoderDecoder  
-2023/02/12 23:56:53 - mmengine - INFO - Load checkpoint from /HOME/scz5202/run/mmsegmentation/checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth
-2023/02/12 23:56:53 - mmengine - INFO - Checkpoints will be saved to /data/run01/scz0bet/mmsegmentation/work/test.
-2023/02/12 23:57:14 - mmengine - INFO - Iter(train) [ 100/1600]  lr: 9.9779e-03  eta: 0:05:12  time: 0.1498  data_time: 0.0191  memory: 11478  loss: 0.1104  decode.loss_ce: 0.0787  decode.acc_seg: 98.7212  aux.loss_ce: 0.0318  aux.acc_seg: 98.7212
-2023/02/12 23:57:29 - mmengine - INFO - Iter(train) [ 200/1600]  lr: 9.9557e-03  eta: 0:04:09  time: 0.1429  data_time: 0.0118  memory: 3774  loss: 0.0527  decode.loss_ce: 0.0364  decode.acc_seg: 99.9683  aux.loss_ce: 0.0163  aux.acc_seg: 99.9683
-2023/02/12 23:57:37 - mmengine - INFO - Exp name: test_20230212_235645
-2023/02/12 23:57:43 - mmengine - INFO - Iter(train) [ 300/1600]  lr: 9.9334e-03  eta: 0:03:36  time: 0.1407  data_time: 0.0094  memory: 3774  loss: 0.0517  decode.loss_ce: 0.0359  decode.acc_seg: 99.4693  aux.loss_ce: 0.0158  aux.acc_seg: 99.8386
-2023/02/12 23:57:57 - mmengine - INFO - Iter(train) [ 400/1600]  lr: 9.9111e-03  eta: 0:03:11  time: 0.1368  data_time: 0.0050  memory: 3774  loss: 0.0450  decode.loss_ce: 0.0320  decode.acc_seg: 92.5436  aux.loss_ce: 0.0130  aux.acc_seg: 91.9728
-2023/02/12 23:57:57 - mmengine - INFO - Saving checkpoint at 400 iterations
-2023/02/12 23:58:01 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:11  time: 0.0146  data_time: 0.0017  memory: 9330  
-2023/02/12 23:58:02 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:06  time: 0.0146  data_time: 0.0018  memory: 696  
-2023/02/12 23:58:04 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:04  time: 0.0148  data_time: 0.0019  memory: 696  
-2023/02/12 23:58:05 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:02  time: 0.0147  data_time: 0.0019  memory: 696  
-2023/02/12 23:58:07 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0146  data_time: 0.0018  memory: 696  
-2023/02/12 23:58:07 - mmengine - INFO - per class results:
-2023/02/12 23:58:07 - mmengine - INFO - 
+2023/02/13 20:22:39 - mmengine - INFO - Load checkpoint from /HOME/scz5202/run/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth
+2023/02/13 20:22:39 - mmengine - INFO - Checkpoints will be saved to /data/run01/scz5202/mmsegmentation/work/Glomeruli.
+2023/02/13 20:23:01 - mmengine - INFO - Iter(train) [ 100/2400]  lr: 9.9779e-03  eta: 0:08:12  time: 0.1524  data_time: 0.0245  memory: 11478  loss: 0.1161  decode.loss_ce: 0.0819  decode.acc_seg: 98.7212  aux.loss_ce: 0.0342  aux.acc_seg: 98.7212
+2023/02/13 20:23:16 - mmengine - INFO - Iter(train) [ 200/2400]  lr: 9.9557e-03  eta: 0:06:44  time: 0.1563  data_time: 0.0278  memory: 3774  loss: 0.0475  decode.loss_ce: 0.0333  decode.acc_seg: 99.9683  aux.loss_ce: 0.0141  aux.acc_seg: 99.9683
+2023/02/13 20:23:26 - mmengine - INFO - Exp name: test_20230213_202221
+2023/02/13 20:23:31 - mmengine - INFO - Iter(train) [ 300/2400]  lr: 9.9334e-03  eta: 0:06:05  time: 0.1420  data_time: 0.0127  memory: 3774  loss: 0.0483  decode.loss_ce: 0.0329  decode.acc_seg: 99.1893  aux.loss_ce: 0.0153  aux.acc_seg: 99.8386
+2023/02/13 20:23:45 - mmengine - INFO - Iter(train) [ 400/2400]  lr: 9.9111e-03  eta: 0:05:30  time: 0.1353  data_time: 0.0061  memory: 3774  loss: 0.0337  decode.loss_ce: 0.0224  decode.acc_seg: 95.7890  aux.loss_ce: 0.0113  aux.acc_seg: 93.3918
+2023/02/13 20:23:48 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:10  time: 0.0142  data_time: 0.0014  memory: 9330  
+2023/02/13 20:23:49 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:06  time: 0.0145  data_time: 0.0017  memory: 696  
+2023/02/13 20:23:51 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0145  data_time: 0.0017  memory: 696  
+2023/02/13 20:23:52 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:02  time: 0.0154  data_time: 0.0027  memory: 696  
+2023/02/13 20:23:54 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0149  data_time: 0.0018  memory: 696  
+2023/02/13 20:23:54 - mmengine - INFO - per class results:
+2023/02/13 20:23:54 - mmengine - INFO - 
 +------------+-------+-------+
 |   Class    |  IoU  |  Acc  |
 +------------+-------+-------+
-| background |  99.1 | 99.87 |
-| glomeruili | 55.92 | 59.66 |
+| background | 98.81 | 99.97 |
+| glomeruili | 39.05 | 39.73 |
 +------------+-------+-------+
-2023/02/12 23:58:07 - mmengine - INFO - Iter(val) [515/515]  aAcc: 99.1100  mIoU: 77.5100  mAcc: 79.7600
-2023/02/12 23:58:21 - mmengine - INFO - Iter(train) [ 500/1600]  lr: 9.8888e-03  eta: 0:02:50  time: 0.1361  data_time: 0.0051  memory: 3774  loss: 0.0439  decode.loss_ce: 0.0309  decode.acc_seg: 99.9490  aux.loss_ce: 0.0129  aux.acc_seg: 100.0000
-2023/02/12 23:58:34 - mmengine - INFO - Iter(train) [ 600/1600]  lr: 9.8665e-03  eta: 0:02:31  time: 0.1359  data_time: 0.0047  memory: 3774  loss: 0.0216  decode.loss_ce: 0.0143  decode.acc_seg: 100.0000  aux.loss_ce: 0.0072  aux.acc_seg: 100.0000
-2023/02/12 23:58:48 - mmengine - INFO - Iter(train) [ 700/1600]  lr: 9.8442e-03  eta: 0:02:14  time: 0.1359  data_time: 0.0046  memory: 3774  loss: 0.0213  decode.loss_ce: 0.0143  decode.acc_seg: 99.3323  aux.loss_ce: 0.0070  aux.acc_seg: 98.7218
-2023/02/12 23:59:02 - mmengine - INFO - Iter(train) [ 800/1600]  lr: 9.8218e-03  eta: 0:01:58  time: 0.1370  data_time: 0.0049  memory: 3774  loss: 0.0307  decode.loss_ce: 0.0215  decode.acc_seg: 99.5283  aux.loss_ce: 0.0092  aux.acc_seg: 99.9567
-2023/02/12 23:59:02 - mmengine - INFO - Saving checkpoint at 800 iterations
-2023/02/12 23:59:05 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:06  time: 0.0145  data_time: 0.0016  memory: 696  
-2023/02/12 23:59:06 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:04  time: 0.0146  data_time: 0.0018  memory: 696  
-2023/02/12 23:59:08 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0147  data_time: 0.0018  memory: 696  
-2023/02/12 23:59:09 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:01  time: 0.0147  data_time: 0.0019  memory: 696  
-2023/02/12 23:59:11 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0146  data_time: 0.0018  memory: 696  
-2023/02/12 23:59:11 - mmengine - INFO - per class results:
-2023/02/12 23:59:11 - mmengine - INFO - 
-+------------+-------+-------+
-|   Class    |  IoU  |  Acc  |
-+------------+-------+-------+
-| background |  99.1 | 99.55 |
-| glomeruili | 61.96 | 76.42 |
-+------------+-------+-------+
-2023/02/12 23:59:11 - mmengine - INFO - Iter(val) [515/515]  aAcc: 99.1100  mIoU: 80.5300  mAcc: 87.9800
-2023/02/12 23:59:25 - mmengine - INFO - Iter(train) [ 900/1600]  lr: 9.7995e-03  eta: 0:01:42  time: 0.1369  data_time: 0.0047  memory: 3774  loss: 0.0228  decode.loss_ce: 0.0150  decode.acc_seg: 98.2226  aux.loss_ce: 0.0078  aux.acc_seg: 98.5454
-2023/02/12 23:59:38 - mmengine - INFO - Exp name: test_20230212_235645
-2023/02/12 23:59:38 - mmengine - INFO - Iter(train) [1000/1600]  lr: 9.7772e-03  eta: 0:01:27  time: 0.1371  data_time: 0.0048  memory: 3774  loss: 0.0231  decode.loss_ce: 0.0161  decode.acc_seg: 99.3395  aux.loss_ce: 0.0070  aux.acc_seg: 98.8667
-2023/02/12 23:59:52 - mmengine - INFO - Iter(train) [1100/1600]  lr: 9.7549e-03  eta: 0:01:12  time: 0.1373  data_time: 0.0049  memory: 3774  loss: 0.0149  decode.loss_ce: 0.0096  decode.acc_seg: 99.8324  aux.loss_ce: 0.0052  aux.acc_seg: 99.5995
-2023/02/13 00:00:06 - mmengine - INFO - Iter(train) [1200/1600]  lr: 9.7325e-03  eta: 0:00:57  time: 0.1368  data_time: 0.0048  memory: 3774  loss: 0.0347  decode.loss_ce: 0.0233  decode.acc_seg: 100.0000  aux.loss_ce: 0.0114  aux.acc_seg: 99.9844
-2023/02/13 00:00:06 - mmengine - INFO - Saving checkpoint at 1200 iterations
-2023/02/13 00:00:09 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:06  time: 0.0144  data_time: 0.0017  memory: 696  
-2023/02/13 00:00:10 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:04  time: 0.0146  data_time: 0.0017  memory: 696  
-2023/02/13 00:00:12 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0146  data_time: 0.0017  memory: 696  
-2023/02/13 00:00:13 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:01  time: 0.0145  data_time: 0.0018  memory: 696  
-2023/02/13 00:00:15 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0146  data_time: 0.0018  memory: 696  
-2023/02/13 00:00:15 - mmengine - INFO - per class results:
-2023/02/13 00:00:15 - mmengine - INFO - 
+2023/02/13 20:23:54 - mmengine - INFO - Iter(val) [515/515]  aAcc: 98.8200  mIoU: 68.9300  mAcc: 69.8500
+2023/02/13 20:24:07 - mmengine - INFO - Iter(train) [ 500/2400]  lr: 9.8888e-03  eta: 0:05:02  time: 0.1359  data_time: 0.0065  memory: 3774  loss: 0.0348  decode.loss_ce: 0.0231  decode.acc_seg: 99.9630  aux.loss_ce: 0.0117  aux.acc_seg: 100.0000
+2023/02/13 20:24:21 - mmengine - INFO - Iter(train) [ 600/2400]  lr: 9.8665e-03  eta: 0:04:39  time: 0.1348  data_time: 0.0052  memory: 3774  loss: 0.0209  decode.loss_ce: 0.0135  decode.acc_seg: 100.0000  aux.loss_ce: 0.0074  aux.acc_seg: 100.0000
+2023/02/13 20:24:35 - mmengine - INFO - Iter(train) [ 700/2400]  lr: 9.8442e-03  eta: 0:04:19  time: 0.1346  data_time: 0.0052  memory: 3774  loss: 0.0230  decode.loss_ce: 0.0150  decode.acc_seg: 98.4682  aux.loss_ce: 0.0080  aux.acc_seg: 96.6445
+2023/02/13 20:24:49 - mmengine - INFO - Iter(train) [ 800/2400]  lr: 9.8218e-03  eta: 0:04:01  time: 0.1393  data_time: 0.0097  memory: 3774  loss: 0.0220  decode.loss_ce: 0.0151  decode.acc_seg: 99.9740  aux.loss_ce: 0.0069  aux.acc_seg: 99.9740
+2023/02/13 20:24:49 - mmengine - INFO - Saving checkpoint at 800 iterations
+2023/02/13 20:24:52 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:06  time: 0.0147  data_time: 0.0017  memory: 696  
+2023/02/13 20:24:53 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:04  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:24:55 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:24:56 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:01  time: 0.0145  data_time: 0.0016  memory: 696  
+2023/02/13 20:24:58 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:24:58 - mmengine - INFO - per class results:
+2023/02/13 20:24:58 - mmengine - INFO - 
 +------------+-------+-------+
 |   Class    |  IoU  |  Acc  |
 +------------+-------+-------+
-| background | 98.95 | 99.62 |
-| glomeruili | 54.38 | 65.09 |
+| background | 99.25 | 99.73 |
+| glomeruili | 66.12 | 75.46 |
 +------------+-------+-------+
-2023/02/13 00:00:15 - mmengine - INFO - Iter(val) [515/515]  aAcc: 98.9600  mIoU: 76.6700  mAcc: 82.3600
-2023/02/13 00:00:29 - mmengine - INFO - Iter(train) [1300/1600]  lr: 9.7102e-03  eta: 0:00:43  time: 0.1377  data_time: 0.0050  memory: 3774  loss: 0.0160  decode.loss_ce: 0.0093  decode.acc_seg: 99.8348  aux.loss_ce: 0.0067  aux.acc_seg: 99.5713
-2023/02/13 00:00:42 - mmengine - INFO - Iter(train) [1400/1600]  lr: 9.6878e-03  eta: 0:00:28  time: 0.1379  data_time: 0.0054  memory: 3774  loss: 0.0208  decode.loss_ce: 0.0147  decode.acc_seg: 99.7847  aux.loss_ce: 0.0061  aux.acc_seg: 99.3547
-2023/02/13 00:00:56 - mmengine - INFO - Iter(train) [1500/1600]  lr: 9.6655e-03  eta: 0:00:14  time: 0.1375  data_time: 0.0052  memory: 3774  loss: 0.0200  decode.loss_ce: 0.0122  decode.acc_seg: 99.5649  aux.loss_ce: 0.0078  aux.acc_seg: 99.5262
-2023/02/13 00:01:10 - mmengine - INFO - Iter(train) [1600/1600]  lr: 9.6431e-03  eta: 0:00:00  time: 0.1376  data_time: 0.0051  memory: 3774  loss: 0.0206  decode.loss_ce: 0.0146  decode.acc_seg: 99.5025  aux.loss_ce: 0.0061  aux.acc_seg: 99.9189
-2023/02/13 00:01:10 - mmengine - INFO - Saving checkpoint at 1600 iterations
-2023/02/13 00:01:13 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:06  time: 0.0144  data_time: 0.0017  memory: 696  
-2023/02/13 00:01:14 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:04  time: 0.0144  data_time: 0.0017  memory: 696  
-2023/02/13 00:01:16 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0146  data_time: 0.0017  memory: 696  
-2023/02/13 00:01:17 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:01  time: 0.0147  data_time: 0.0017  memory: 696  
-2023/02/13 00:01:19 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0144  data_time: 0.0017  memory: 696  
-2023/02/13 00:01:19 - mmengine - INFO - per class results:
-2023/02/13 00:01:19 - mmengine - INFO - 
+2023/02/13 20:24:58 - mmengine - INFO - Iter(val) [515/515]  aAcc: 99.2700  mIoU: 82.6900  mAcc: 87.5900
+2023/02/13 20:25:11 - mmengine - INFO - Iter(train) [ 900/2400]  lr: 9.7995e-03  eta: 0:03:43  time: 0.1346  data_time: 0.0050  memory: 3774  loss: 0.0184  decode.loss_ce: 0.0116  decode.acc_seg: 98.5890  aux.loss_ce: 0.0068  aux.acc_seg: 99.0455
+2023/02/13 20:25:25 - mmengine - INFO - Exp name: test_20230213_202221
+2023/02/13 20:25:25 - mmengine - INFO - Iter(train) [1000/2400]  lr: 9.7772e-03  eta: 0:03:26  time: 0.1343  data_time: 0.0051  memory: 3774  loss: 0.0194  decode.loss_ce: 0.0134  decode.acc_seg: 97.9709  aux.loss_ce: 0.0060  aux.acc_seg: 98.0995
+2023/02/13 20:25:39 - mmengine - INFO - Iter(train) [1100/2400]  lr: 9.7549e-03  eta: 0:03:10  time: 0.1383  data_time: 0.0090  memory: 3774  loss: 0.0147  decode.loss_ce: 0.0095  decode.acc_seg: 99.7455  aux.loss_ce: 0.0052  aux.acc_seg: 99.4287
+2023/02/13 20:25:52 - mmengine - INFO - Iter(train) [1200/2400]  lr: 9.7325e-03  eta: 0:02:55  time: 0.1340  data_time: 0.0050  memory: 3774  loss: 0.0343  decode.loss_ce: 0.0247  decode.acc_seg: 97.6351  aux.loss_ce: 0.0096  aux.acc_seg: 97.9526
+2023/02/13 20:25:54 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:06  time: 0.0145  data_time: 0.0017  memory: 696  
+2023/02/13 20:25:55 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:04  time: 0.0147  data_time: 0.0018  memory: 696  
+2023/02/13 20:25:57 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0146  data_time: 0.0018  memory: 696  
+2023/02/13 20:25:58 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:01  time: 0.0147  data_time: 0.0019  memory: 696  
+2023/02/13 20:26:00 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0145  data_time: 0.0017  memory: 696  
+2023/02/13 20:26:00 - mmengine - INFO - per class results:
+2023/02/13 20:26:00 - mmengine - INFO - 
 +------------+-------+-------+
 |   Class    |  IoU  |  Acc  |
 +------------+-------+-------+
-| background | 99.36 | 99.85 |
-| glomeruili | 69.45 | 74.95 |
+| background |  98.2 | 98.33 |
+| glomeruili | 50.09 | 93.26 |
 +------------+-------+-------+
-2023/02/13 00:01:19 - mmengine - INFO - Iter(val) [515/515]  aAcc: 99.3700  mIoU: 84.4100  mAcc: 87.4000
+2023/02/13 20:26:00 - mmengine - INFO - Iter(val) [515/515]  aAcc: 98.2300  mIoU: 74.1500  mAcc: 95.8000
+2023/02/13 20:26:13 - mmengine - INFO - Iter(train) [1300/2400]  lr: 9.7102e-03  eta: 0:02:39  time: 0.1341  data_time: 0.0051  memory: 3774  loss: 0.0190  decode.loss_ce: 0.0113  decode.acc_seg: 99.2442  aux.loss_ce: 0.0077  aux.acc_seg: 99.2442
+2023/02/13 20:26:27 - mmengine - INFO - Iter(train) [1400/2400]  lr: 9.6878e-03  eta: 0:02:24  time: 0.1470  data_time: 0.0181  memory: 3774  loss: 0.0206  decode.loss_ce: 0.0138  decode.acc_seg: 99.0503  aux.loss_ce: 0.0068  aux.acc_seg: 98.7917
+2023/02/13 20:26:41 - mmengine - INFO - Iter(train) [1500/2400]  lr: 9.6655e-03  eta: 0:02:09  time: 0.1357  data_time: 0.0064  memory: 3774  loss: 0.0293  decode.loss_ce: 0.0191  decode.acc_seg: 99.6082  aux.loss_ce: 0.0102  aux.acc_seg: 99.4563
+2023/02/13 20:26:54 - mmengine - INFO - Iter(train) [1600/2400]  lr: 9.6431e-03  eta: 0:01:54  time: 0.1347  data_time: 0.0053  memory: 3774  loss: 0.0154  decode.loss_ce: 0.0107  decode.acc_seg: 99.9386  aux.loss_ce: 0.0047  aux.acc_seg: 100.0000
+2023/02/13 20:26:54 - mmengine - INFO - Saving checkpoint at 1600 iterations
+2023/02/13 20:26:58 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:06  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:26:59 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:04  time: 0.0147  data_time: 0.0018  memory: 696  
+2023/02/13 20:27:01 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0147  data_time: 0.0019  memory: 696  
+2023/02/13 20:27:02 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:01  time: 0.0146  data_time: 0.0018  memory: 696  
+2023/02/13 20:27:03 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0148  data_time: 0.0018  memory: 696  
+2023/02/13 20:27:04 - mmengine - INFO - per class results:
+2023/02/13 20:27:04 - mmengine - INFO - 
++------------+-------+-------+
+|   Class    |  IoU  |  Acc  |
++------------+-------+-------+
+| background |  99.5 | 99.85 |
+| glomeruili | 75.81 | 81.78 |
++------------+-------+-------+
+2023/02/13 20:27:04 - mmengine - INFO - Iter(val) [515/515]  aAcc: 99.5000  mIoU: 87.6600  mAcc: 90.8200
+2023/02/13 20:27:17 - mmengine - INFO - Iter(train) [1700/2400]  lr: 9.6207e-03  eta: 0:01:40  time: 0.1333  data_time: 0.0046  memory: 3774  loss: 0.0169  decode.loss_ce: 0.0105  decode.acc_seg: 99.5527  aux.loss_ce: 0.0064  aux.acc_seg: 99.5176
+2023/02/13 20:27:31 - mmengine - INFO - Iter(train) [1800/2400]  lr: 9.5983e-03  eta: 0:01:25  time: 0.1346  data_time: 0.0050  memory: 3774  loss: 0.0150  decode.loss_ce: 0.0102  decode.acc_seg: 99.6557  aux.loss_ce: 0.0048  aux.acc_seg: 99.6542
+2023/02/13 20:27:45 - mmengine - INFO - Iter(train) [1900/2400]  lr: 9.5760e-03  eta: 0:01:11  time: 0.1387  data_time: 0.0101  memory: 3774  loss: 0.0140  decode.loss_ce: 0.0093  decode.acc_seg: 98.7641  aux.loss_ce: 0.0047  aux.acc_seg: 97.9526
+2023/02/13 20:27:59 - mmengine - INFO - Exp name: test_20230213_202221
+2023/02/13 20:27:59 - mmengine - INFO - Iter(train) [2000/2400]  lr: 9.5536e-03  eta: 0:00:56  time: 0.1417  data_time: 0.0129  memory: 3774  loss: 0.0103  decode.loss_ce: 0.0066  decode.acc_seg: 99.9670  aux.loss_ce: 0.0037  aux.acc_seg: 99.9670
+2023/02/13 20:28:00 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:06  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:28:02 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:04  time: 0.0146  data_time: 0.0018  memory: 696  
+2023/02/13 20:28:03 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0148  data_time: 0.0019  memory: 696  
+2023/02/13 20:28:05 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:01  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:28:06 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:28:06 - mmengine - INFO - per class results:
+2023/02/13 20:28:06 - mmengine - INFO - 
++------------+-------+-------+
+|   Class    |  IoU  |  Acc  |
++------------+-------+-------+
+| background | 99.49 | 99.83 |
+| glomeruili | 75.54 | 82.24 |
++------------+-------+-------+
+2023/02/13 20:28:06 - mmengine - INFO - Iter(val) [515/515]  aAcc: 99.4900  mIoU: 87.5100  mAcc: 91.0400
+2023/02/13 20:28:20 - mmengine - INFO - Iter(train) [2100/2400]  lr: 9.5312e-03  eta: 0:00:42  time: 0.1350  data_time: 0.0055  memory: 3774  loss: 0.0235  decode.loss_ce: 0.0158  decode.acc_seg: 100.0000  aux.loss_ce: 0.0077  aux.acc_seg: 100.0000
+2023/02/13 20:28:34 - mmengine - INFO - Iter(train) [2200/2400]  lr: 9.5088e-03  eta: 0:00:28  time: 0.1355  data_time: 0.0061  memory: 3774  loss: 0.0163  decode.loss_ce: 0.0108  decode.acc_seg: 98.6319  aux.loss_ce: 0.0055  aux.acc_seg: 98.0626
+2023/02/13 20:28:47 - mmengine - INFO - Iter(train) [2300/2400]  lr: 9.4864e-03  eta: 0:00:14  time: 0.1369  data_time: 0.0075  memory: 3774  loss: 0.0160  decode.loss_ce: 0.0110  decode.acc_seg: 99.4798  aux.loss_ce: 0.0050  aux.acc_seg: 99.4366
+2023/02/13 20:29:01 - mmengine - INFO - Iter(train) [2400/2400]  lr: 9.4640e-03  eta: 0:00:00  time: 0.1399  data_time: 0.0104  memory: 3774  loss: 0.0151  decode.loss_ce: 0.0099  decode.acc_seg: 99.4743  aux.loss_ce: 0.0052  aux.acc_seg: 99.1998
+2023/02/13 20:29:01 - mmengine - INFO - Saving checkpoint at 2400 iterations
+2023/02/13 20:29:04 - mmengine - INFO - Iter(val) [100/515]    eta: 0:00:06  time: 0.0146  data_time: 0.0016  memory: 696  
+2023/02/13 20:29:06 - mmengine - INFO - Iter(val) [200/515]    eta: 0:00:04  time: 0.0147  data_time: 0.0017  memory: 696  
+2023/02/13 20:29:07 - mmengine - INFO - Iter(val) [300/515]    eta: 0:00:03  time: 0.0148  data_time: 0.0018  memory: 696  
+2023/02/13 20:29:09 - mmengine - INFO - Iter(val) [400/515]    eta: 0:00:01  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:29:10 - mmengine - INFO - Iter(val) [500/515]    eta: 0:00:00  time: 0.0146  data_time: 0.0017  memory: 696  
+2023/02/13 20:29:10 - mmengine - INFO - per class results:
+2023/02/13 20:29:10 - mmengine - INFO - 
++------------+-------+-------+
+|   Class    |  IoU  |  Acc  |
++------------+-------+-------+
+| background | 99.54 | 99.85 |
+| glomeruili | 77.87 | 83.99 |
++------------+-------+-------+
+2023/02/13 20:29:10 - mmengine - INFO - Iter(val) [515/515]  aAcc: 99.5500  mIoU: 88.7100  mAcc: 91.9200
